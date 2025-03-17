@@ -1,0 +1,30 @@
+{
+  "name": "timeclock",
+  "version": "1.0.0",
+  "description": "creating a real clock time",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass scss/main.scss css/style.css -w",
+    "compile:sass": "sass scss/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "__commentPrefix": "PREFIX: necessario instalar (npm install postcss postcss-cli autoprefixer --save-dev)",
+    "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
+    "build:sass": "npm-run-all compile:sass prefix:css compress:css",
+    "__commentBuild": "BUILD: execute(npm run build:sass) - necessário instalar o (npm install npm-run-all --save-dev)"
+  },
+  "keywords": [
+    "project",
+    "timer",
+    "sass",
+    "javascript"
+  ],
+  "author": "Jorge William",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
+}
