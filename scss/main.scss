@@ -39,11 +39,13 @@ body {
 }
 
 .container__layer1 {
+  position: relative;
   animation-direction: alternate-reverse;
   animation-duration: 5s;
 }
 .container__layer2 {
   animation-duration: 8s;
+  animation-direction: reverse;
 }
 
 .container__clock {
