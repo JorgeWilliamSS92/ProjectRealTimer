@@ -59,5 +59,19 @@ body {
     transform: translateX(50%);
   }
 }
+@media (max-width: 680px) {
+  .container__clock {
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container__clock--timer {
+    font-size: 4.5rem;
+    color: #dbe4ee;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
